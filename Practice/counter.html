@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input id="name" type="passowrd" placeholder="Type something..." />
+      <p id="status"></p>
+    <br> <br>
+    <button id="dec">-</button>
+    <span id="count">0</span>
+    <button id="inc" >+</button>
+
+    <script>
+         let c = 0;
+
+        function increase() {
+            document.getElementById("count").innerText = ++c;
+            console.log(c)
+        }
+
+        function decrease() {
+            document.getElementById("count").innerText = --c;
+            console.log(c)
+        }
+        document.getElementById("inc").addEventListener("click",increase)
+        document.getElementById("dec").addEventListener("click",decrease)
+
+        let pid = document.getElementById("status")
+        let inputid = document.getElementById("name").addEventListener("input",()=> pid.textContent = "typing")
+    </script>
+</body>
+</html>
