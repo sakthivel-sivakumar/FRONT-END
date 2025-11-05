@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Info App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Building Info App</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#" id="home-link">Home</a></li>
+        <li><a href="#" id="list-link">Buildings</a></li>
+        <li><a href="#" id="add-link">Add Building</a></li>
+        <li><a href="#" id="about-link">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Home Section -->
+      <section id="home-section">
+        <h2>Welcome to the Building Info App</h2>
+        <p>Use the navigation menu to explore the app.</p>
+      </section>
+
+      <!-- Building List Section -->
+      <section id="list-section" class="hidden">
+        <h2>Building List</h2>
+        <div id="building-list">
+          <!-- Building cards will appear here -->
+        </div>
+      </section>
+
+      <!-- Add Building Section -->
+      <section id="add-section" class="hidden">
+        <form id="add-building-form">
+          <label for="name">Building Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" required />
+
+          <label for="floors">Number of Floors:</label>
+          <input type="number" id="floors" required />
+
+          <button type="submit">Add Building</button>
+        </form>
+      </section>
+
+      <!-- About Section -->
+      <section id="about-section" class="hidden">
+        <h2>About</h2>
+        <p>
+          This app allows you to view, add, and manage building information.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Building Info App</p>
+    </footer>
+  </body>
+</html>
