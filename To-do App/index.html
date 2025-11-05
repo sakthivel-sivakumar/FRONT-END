@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Todo List App</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Add Task Section -->
+    <section id="task-add-section">
+      <form id="task-form">
+        <label for="input-task-name">Task Name</label>
+        <input type="text" id="input-task-name" placeholder="Enter your task name" required />
+        <button type="submit" id="add-btn">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Filter Section -->
+    <section id="task-filter-section">
+      <button id="all-btn">All</button>
+      <button id="completed-btn">Completed</button>
+      <button id="pending-btn">Pending</button>
+    </section>
+
+    <!-- Task Display Section -->
+    
+    <section id="pending-tasks">
+      <h3>Pending Tasks</h3>
+      <div class="task-display">
+        <!-- Pending tasks appear here -->
+      </div>
+    </section>
+
+    <section id="completed-tasks">
+      <h3>Completed Tasks</h3>
+      <div class="task-display">
+        <!-- Completed tasks appear here -->
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Todo List App</p>
+  </footer>
+</body>
+</html>
